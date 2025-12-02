@@ -8,6 +8,7 @@ return [
     'preset' => 'laravel',
     'exclude' => [
         'database/*',
+        'app/MoonShine',
     ],
     'config' => [
         LineLengthSniff::class => [
