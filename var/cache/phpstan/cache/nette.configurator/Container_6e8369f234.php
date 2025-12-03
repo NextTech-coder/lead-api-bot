@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
+class Container_6e8369f234 extends _PHPStan_e870ac104\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -5111,7 +5111,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_1270ee16b5 $container)
+			public function __construct(Container_6e8369f234 $container)
 			{
 				$this->container = $container;
 			}
@@ -5131,7 +5131,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_1270ee16b5 $container)
+			public function __construct(Container_6e8369f234 $container)
 			{
 				$this->container = $container;
 			}
@@ -5154,7 +5154,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_1270ee16b5 $container)
+			public function __construct(Container_6e8369f234 $container)
 			{
 				$this->container = $container;
 			}
@@ -5174,7 +5174,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_1270ee16b5 $container)
+			public function __construct(Container_6e8369f234 $container)
 			{
 				$this->container = $container;
 			}
@@ -5239,7 +5239,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_1270ee16b5 $container)
+			public function __construct(Container_6e8369f234 $container)
 			{
 				$this->container = $container;
 			}
@@ -5297,7 +5297,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_1270ee16b5 $container)
+			public function __construct(Container_6e8369f234 $container)
 			{
 				$this->container = $container;
 			}
@@ -5355,7 +5355,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_1270ee16b5 $container)
+			public function __construct(Container_6e8369f234 $container)
 			{
 				$this->container = $container;
 			}
@@ -8561,7 +8561,7 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 	}
 
 
-	public function createServiceContainer(): Container_1270ee16b5
+	public function createServiceContainer(): Container_6e8369f234
 	{
 		return $this;
 	}
@@ -9225,43 +9225,28 @@ class Container_1270ee16b5 extends _PHPStan_e870ac104\Nette\DI\Container
 				'WSL_DISTRO_NAME' => 'Ubuntu',
 				'WAYLAND_DISPLAY' => 'wayland-0',
 				'LOGNAME' => 'olegdanilyuk',
-				'NAME' => 'MKZ-PC-0635',
-				'WSL_INTEROP' => '/run/WSL/4304_interop',
 				'PULSE_SERVER' => 'unix:/mnt/wslg/PulseServer',
+				'WSL_INTEROP' => '/run/WSL/10016_interop',
+				'NAME' => 'MKZ-PC-0635',
 				'_' => '/home/olegdanilyuk/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node',
 				'TERM' => 'xterm-256color',
-				'PATH' => '/home/olegdanilyuk/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/home/olegdanilyuk/.local/bin:/home/olegdanilyuk/.config/herd-lite/bin:/home/olegdanilyuk/.cargo/bin:/home/olegdanilyuk/.local/share/pnpm:/home/olegdanilyuk/.nvm/versions/node/v22.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/Docker/host/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/OlegDanilyuk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/OlegDanilyuk/AppData/Local/JetBrains/PhpStorm 2024.1.2/bin:/mnt/c/Users/OlegDanilyuk/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/OlegDanilyuk/AppData/Local/Programs/Zed/bin:/snap/bin:/usr/local/go/bin:/home/olegdanilyuk/.config/composer/vendor/bin',
+				'PATH' => '/home/olegdanilyuk/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/Docker/host/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/OlegDanilyuk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/OlegDanilyuk/AppData/Local/JetBrains/PhpStorm 2024.1.2/bin:/mnt/c/Users/OlegDanilyuk/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/OlegDanilyuk/AppData/Local/Programs/Zed/bin',
 				'XDG_RUNTIME_DIR' => '/run/user/1000/',
 				'DISPLAY' => ':0',
 				'LANG' => 'C.UTF-8',
-				'SHELL' => '/bin/bash',
+				'SHELL' => '/usr/bin/zsh',
 				'PWD' => '/mnt/c/Users/OlegDanilyuk/AppData/Local/Programs/Microsoft VS Code',
-				'WSL2_GUI_APPS_ENABLED' => '1',
 				'HOSTTYPE' => 'x86_64',
+				'WSL2_GUI_APPS_ENABLED' => '1',
 				'WSLENV' => 'VSCODE_WSL_EXT_LOCATION/up',
 				'VSCODE_CWD' => '/mnt/c/Users/OlegDanilyuk/AppData/Local/Programs/Microsoft VS Code',
 				'VSCODE_NLS_CONFIG' => '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/olegdanilyuk/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/out/nls.messages.json","locale":"en","availableLanguages":{}}',
 				'VSCODE_HANDLES_SIGPIPE' => 'true',
-				'NVM_INC' => '/home/olegdanilyuk/.nvm/versions/node/v22.3.0/include/node',
-				'no_proxy' => '.ttk.ru,.dev.ttk.ru,.eisc.ttk.ru,localhost,127.0.0.1,.mkz.ttk.ru,172.0.0.1,.local',
-				'HISTTIMEFORMAT' => '%F %T ',
 				'GPG_TTY' => 'not a tty',
-				'PNPM_HOME' => '/home/olegdanilyuk/.local/share/pnpm',
-				'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:',
-				'https_proxy' => 'http://10.105.0.217:3128',
-				'GOROOT' => '/usr/local/go',
-				'NVM_DIR' => '/home/olegdanilyuk/.nvm',
-				'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
-				'LESSOPEN' => '| /usr/bin/lesspipe %s',
-				'NVM_CD_FLAGS' => '',
-				'http_proxy' => 'http://10.105.0.217:3128',
-				'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
-				'PHP_INI_SCAN_DIR' => '/home/olegdanilyuk/.config/herd-lite/bin:',
-				'NVM_BIN' => '/home/olegdanilyuk/.nvm/versions/node/v22.3.0/bin',
 				'VSCODE_ESM_ENTRYPOINT' => 'vs/workbench/api/node/extensionHostProcess',
 				'VSCODE_HANDLES_UNCAUGHT_ERRORS' => 'true',
 				'ELECTRON_RUN_AS_NODE' => '1',
-				'VSCODE_IPC_HOOK_CLI' => '/run/user/1000/vscode-ipc-8c60fbfc-472b-4cd7-8eba-272498ce1baf.sock',
+				'VSCODE_IPC_HOOK_CLI' => '/run/user/1000/vscode-ipc-9fb5ecc2-7505-4358-b2a8-f60dcad67e06.sock',
 				'APPLICATION_INSIGHTS_NO_STATSBEAT' => 'true',
 				'VSCODE_L10N_BUNDLE_LOCATION' => '',
 				'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL' => '1',
