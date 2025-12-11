@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources\MoonShineUser\Pages;
 
+use App\MoonShine\Resources\MoonShineUser\MoonShineUserResource;
+use App\MoonShine\Resources\MoonShineUserRole\MoonShineUserRoleResource;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password as PasswordRule;
@@ -14,8 +16,6 @@ use MoonShine\Laravel\Fields\Relationships\BelongsTo;
 use MoonShine\Laravel\Models\MoonshineUser;
 use MoonShine\Laravel\Models\MoonshineUserRole;
 use MoonShine\Laravel\Pages\Crud\FormPage;
-use App\MoonShine\Resources\MoonShineUser\MoonShineUserResource;
-use App\MoonShine\Resources\MoonShineUserRole\MoonShineUserRoleResource;
 use MoonShine\UI\Components\Collapse;
 use MoonShine\UI\Components\Layout\Box;
 use MoonShine\UI\Components\Layout\Flex;
@@ -88,6 +88,11 @@ final class MoonShineUserFormPage extends FormPage
         ];
     }
 
+    /**
+     * @param \MoonShine\Contracts\Core\TypeCasts\DataWrapperContract $item
+     *
+     * @return array<mixed>
+     */
     protected function rules(DataWrapperContract $item): array
     {
         return [

@@ -35,6 +35,7 @@ class SignUpRequest extends FormRequest
                     ->mixedCase()
                     ->symbols(),
             ],
+            'accepted' => ['accepted']
         ];
     }
 }
