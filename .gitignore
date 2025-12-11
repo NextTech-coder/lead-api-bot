@@ -20,6 +20,7 @@
 /storage/pail
 /storage/rector
 /vendor
+/var
 Homestead.json
 Homestead.yaml
 Thumbs.db

@@ -1,0 +1,35 @@
+{
+    "name": "Lead Bot Dev Container",
+    "dockerComposeFile": ["../compose.yaml"],
+    "service": "laravel.test",
+    "workspaceFolder": "/var/www/html",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "laravel.vscode-laravel",
+                "amiralizadeh9480.laravel-extra-intellisense",
+                "porifa.laravel-intelephense",
+                "open-southeners.laravel-pint",
+                "jaguadoromero.vscode-php-create-class",
+                "neilbrayfield.php-docblocker",
+                "bmewburn.vscode-intelephense-client",
+                "sanderronde.phpstan-vscode",
+                "streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-russian",
+                "redhat.vscode-yaml"
+            ],
+            "settings": {
+                "php.validate.executablePath": "/usr/bin/php",
+                "editor.formatOnSave": true,
+                "intelephense.environment.phpVersion": "8.4"
+            }
+        }
+    },
+
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/var/www/html,type=bind",
+        "source=${env:HOME}/.gitconfig,target=/home/sail/.gitconfig,type=bind,consistency=cached",
+        "source=${env:HOME}/.ssh,target=/home/sail/.ssh,type=bind,consistency=cached"
+    ]
+}
