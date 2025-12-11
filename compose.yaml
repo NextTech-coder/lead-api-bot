@@ -25,7 +25,6 @@ services:
             - pgsql
             - redis
             - minio
-            - rabbitmq
             - soketi
     pgsql:
         image: "postgres:18-alpine"
@@ -88,30 +87,6 @@ services:
                 - local
             retries: 3
             timeout: 5s
-    rabbitmq:
-        image: "rabbitmq:4-management-alpine"
-        hostname: rabbitmq
-        ports:
-            - "${FORWARD_RABBITMQ_PORT:-5672}:5672"
-            - "${FORWARD_RABBITMQ_DASHBOARD_PORT:-15672}:15672"
-        environment:
-            RABBITMQ_HOST: "%"
-            RABBITMQ_USER: "${RABBITMQ_USER}"
-            RABBITMQ_PASSWORD: "${RABBITMQ_PASSWORD}"
-            RABBITMQ_VHOST: "${RABBITMQ_VHOST}"
-            RABBITMQ_QUEUE: "${RABBITMQ_QUEUE}"
-        volumes:
-            - "sail-rabbitmq:/var/lib/rabbitmq"
-        networks:
-            - sail
-        healthcheck:
-            test:
-                - CMD
-                - rabbitmq-diagnostics
-                - "-q"
-                - ping
-            retries: 3
-            timeout: 5s
     soketi:
         image: "quay.io/soketi/soketi:latest-16-alpine"
         environment:
@@ -134,6 +109,4 @@ volumes:
     sail-redis:
         driver: local
     sail-minio:
-        driver: local
-    sail-rabbitmq:
         driver: local
