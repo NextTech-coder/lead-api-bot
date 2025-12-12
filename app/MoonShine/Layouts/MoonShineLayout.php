@@ -4,18 +4,21 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Layouts;
 
-use MoonShine\Laravel\Layouts\AppLayout;
-use MoonShine\ColorManager\Palettes\RetroPalette;
+use App\MoonShine\Pages\VerificationUser;
+use App\MoonShine\Resources\VerificationUser\VerificationUserResource;
 use MoonShine\ColorManager\ColorManager;
+use MoonShine\ColorManager\Palettes\PurplePalette;
 use MoonShine\Contracts\ColorManager\ColorManagerContract;
 use MoonShine\Contracts\ColorManager\PaletteContract;
+use MoonShine\Laravel\Layouts\AppLayout;
+use MoonShine\MenuManager\MenuItem;
 
 final class MoonShineLayout extends AppLayout
 {
     /**
      * @var null|class-string<PaletteContract>
      */
-    protected ?string $palette = RetroPalette::class;
+    protected ?string $palette = PurplePalette::class;
 
     protected function assets(): array
     {
@@ -28,6 +31,7 @@ final class MoonShineLayout extends AppLayout
     {
         return [
             ...parent::menu(),
+            MenuItem::make(VerificationUserResource::class, 'Верификация', 'users'),
         ];
     }
 

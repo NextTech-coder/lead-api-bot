@@ -91,7 +91,7 @@ final class MoonShineUserFormPage extends FormPage
     /**
      * @param \MoonShine\Contracts\Core\TypeCasts\DataWrapperContract $item
      *
-     * @return array<mixed>
+     * @return array<string, mixed>
      */
     protected function rules(DataWrapperContract $item): array
     {

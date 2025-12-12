@@ -71,6 +71,8 @@ final class MoonShineUserIndexPage extends IndexPage
 
     /**
      * @param  TableBuilder  $component
+     *
+     * @return TableBuilder
      */
     protected function modifyListComponent(ComponentContract $component): TableBuilder
     {

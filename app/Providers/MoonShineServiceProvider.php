@@ -9,6 +9,7 @@ use App\MoonShine\Resources\MoonShineUserRole\MoonShineUserRoleResource;
 use Illuminate\Support\ServiceProvider;
 use MoonShine\Contracts\Core\DependencyInjection\CoreContract;
 use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
+use App\MoonShine\Resources\VerificationUser\VerificationUserResource;
 
 final class MoonShineServiceProvider extends ServiceProvider
 {
@@ -21,6 +22,7 @@ final class MoonShineServiceProvider extends ServiceProvider
             ->resources([
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,
+                VerificationUserResource::class,
             ])
             ->pages([
                 ...$core->getConfig()->getPages(),

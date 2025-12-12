@@ -15,6 +15,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
         "moonshine/moonshine": "^4.0",
+        "moonshine/ru": "^1.0",
         "spiral/roadrunner-cli": "^2.7",
         "spiral/roadrunner-http": "^3.6"
     },
