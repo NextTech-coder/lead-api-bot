@@ -1,0 +1,27 @@
+#!/bin/sh
+
+echo "Запуск локальных скриптов Laravel..."|
+
+#!/bin/bash
+
+# Скрипты Laravel, которые нужно выполнить перед коммитом
+./shell/check_phpstan.sh
+if [ $? -ne 0 ]; then
+    echo "❌ PHPStan проверка не прошла, коммит заблокирован."
+    exit 1
+fi
+
+./shell/check_pint.sh
+if [ $? -ne 0 ]; then
+    echo "❌ Pint проверка не прошла, коммит заблокирован."
+    exit 1
+fi
+
+./shell/find_tests.sh
+if [ $? -ne 0 ]; then
+    echo "❌ Есть обязательные тесты."
+    exit 1
+fi
+
+echo "✅ Все проверки прошли. Можно коммитить."
+exit 0

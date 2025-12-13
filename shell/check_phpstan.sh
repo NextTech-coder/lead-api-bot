@@ -29,7 +29,7 @@ error() {
 # CHECK NEW FILES
 # -----------------------------
 
-COMMAND="$1"  # either "commit" or "push"
+COMMAND="${1:-commit}"  # either "commit" or "push"
 
 if [ "$COMMAND" = "commit" ]; then
     # Only new files (status A = Added) ending with .php

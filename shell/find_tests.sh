@@ -231,7 +231,7 @@ analyze_coverage() {
 # Main function
 # -----------------------------
 main() {
-    COMMAND="$1"  # commit или push
+    COMMAND="${1:-commit}"  # commit или push
 
     if [ "$COMMAND" = "commit" ]; then
         ALL_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.php$' || true)

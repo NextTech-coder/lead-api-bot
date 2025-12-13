@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMMAND="$1"
+COMMAND="${1:-commit}"
 
 # -----------------------------
 # Colors
