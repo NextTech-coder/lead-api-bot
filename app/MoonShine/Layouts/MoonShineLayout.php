@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Layouts;
 
-use App\MoonShine\Pages\VerificationUser;
+use App\MoonShine\Resources\User\UserResource;
 use App\MoonShine\Resources\VerificationUser\VerificationUserResource;
 use MoonShine\ColorManager\ColorManager;
 use MoonShine\ColorManager\Palettes\PurplePalette;
 use MoonShine\Contracts\ColorManager\ColorManagerContract;
 use MoonShine\Contracts\ColorManager\PaletteContract;
 use MoonShine\Laravel\Layouts\AppLayout;
+use MoonShine\MenuManager\MenuGroup;
 use MoonShine\MenuManager\MenuItem;
 
 final class MoonShineLayout extends AppLayout
@@ -31,7 +32,10 @@ final class MoonShineLayout extends AppLayout
     {
         return [
             ...parent::menu(),
-            MenuItem::make(VerificationUserResource::class, 'Верификация', 'users'),
+            MenuGroup::make(static fn () => __('moonshine::ui.resource.user'), [
+                MenuItem::make(VerificationUserResource::class, 'Верификация', 'users'),
+                MenuItem::make(UserResource::class, 'Список пользователей', 'users'),
+            ]),
         ];
     }
 
