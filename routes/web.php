@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function (): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View {
-    return view('welcome');
+Route::get('/', function (): Response {
+    return new Response('ok');
 });
